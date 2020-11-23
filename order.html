@@ -8,33 +8,39 @@
     <link rel="stylesheet" href="style/main.css">
 
     <title>Компания "Рога и копыта"</title>
-    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <table class="maket">
-        <tr>
-            <td class="header">
-                <h1>Компания "Рога и копыта"</h1>
-                <h2>Мы работаем для вас</h2>
-            </td>
-            <!-- /.header -->
-        </tr>
-        <tr>
-            <td class="horizontal-menu">
-                <hr>
-                <b>| <a href="/index.html">Главная</a> | <a href="/about.html">О компании</a> | <a href="/employee.html">Наши сотрудники</a> |</b>
-                <hr>
-            </td>
-            <!-- /.horizontal-menu -->
-        </tr>
-        <tr class="content-col">
-            <td class="vertical-menu">
-                <a href="#">Главная</a>
-                <a href="/about.html">О компании</a>
-                <a href="/employee.html">Наши сотрудники</a>
-            </td>
+    <div class="wrapper">
+        <header>
+            <h1>Компания "Рога и копыта"</h1>
+            <h2>Мы работаем для вас</h2>
+        </header>
+        <!-- /.header -->
+        <div class="menu">
+            <ul>
+                <li><a href="/index.html" class="menu-link">Главная</a></li>
+                <li><a href="/about.html" class="menu-link">О компании</a></li>
+                <li><a href="/employee.html" class="menu-link">Наши сотрудники</a></li>
+                <li><a href="/order.html" class="menu-link">Заказать</a></li>
+                <li><a href="/gallery.html" class="menu-link">Галерея</a></li>
+                <li><a href="/education.html" class="menu-link">Образование</a></li>
+                <li><a href="https://мвд.рф/" target="_blank" class="menu-link">Мы чтим уголовный кодекс</a></li>
+            </ul>
+        </div>
+        <!-- /.menu -->
+        <div class="content-col">
+            <div class="vertical-menu">
+                <ul>
+                    <li><a href="/index.html" class="menu-link">Главная</a></li>
+                    <li><a href="/about.html" class="menu-link">О компании</a></li>
+                    <li><a href="/employee.html" class="menu-link">Наши сотрудники</a></li>
+                    <li><a href="/order.html" class="menu-link">Заказать</a></li>
+                    <li><a href="/gallery.html" class="menu-link">Галерея</a></li>
+                    <li><a href="/education.html" class="menu-link">Образование</a></li>
+                </ul>
+            </div>
             <!-- /.vertical-menu -->
-            <td class="content">
+            <div class="content">
                 <h3>Заказать</h3>
                 <form action="" method="POST">
                     <label class="calculation">
@@ -66,17 +72,13 @@
                     <label>Пожелания<br><textarea name="wishes" cols="30" rows="4"></textarea></label>
                     <input type="submit" value="Подтвердить заказ">
                 </form>
-            </td>
+            </div>
             <!-- /.content -->
-        </tr>
+        </div>
         <!-- /.content-col -->
-        <tr class="footer">
-            <td>
-                <hr>
-                <i>&copy; Бендер и компания</i>
-            </td>
-            <!-- /.footer -->
-        </tr>
-    </table>
+        <footer>
+            <i>&copy; Бендер и компания</i>
+        </footer>
+    </div>
 </body>
 </html>
