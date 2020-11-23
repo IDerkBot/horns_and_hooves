@@ -1,0 +1,35 @@
+body{background-color: #e7e7e7;}
+h1{
+    color: navy;
+    font-size: 25px;
+    font-weight: medium;
+}
+h2{
+    color: red;
+    font-size: 20px;
+    font-weight: 500;
+}
+p{
+    color: #77eeee;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+img{border: 3px dotted blue;}
+
+.menu ul{
+    display: flex;
+    width: 100%;
+    list-style: none;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+table td.content table td:nth-child(4) img{
+    width: 160px;
+    box-sizing: border-box;
+    object-fit: contain;
+    background-color: red;
+}
