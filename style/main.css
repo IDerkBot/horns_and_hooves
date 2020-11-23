@@ -12,6 +12,7 @@ h2{
 p{
     color: #77eeee;
     font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
     font-size: 14px;
 }
 img{border: 3px dotted blue;}
@@ -20,6 +21,7 @@ img{border: 3px dotted blue;}
     display: flex;
     width: 100%;
     list-style: none;
+    font-family: 'Courier New', Courier, monospace;
 }
 .menu a{
     color: white;
@@ -33,3 +35,12 @@ table td.content table td:nth-child(4) img{
     object-fit: contain;
     background-color: red;
 }
+ul>li:nth-child(1){font-variant: small-caps;}
+ol>li{font-variant: normal;}
+ol>li:nth-child(1){font-weight: 100;}
+ol>li:nth-child(2){font-weight: 300;}
+ol>li:nth-child(3){font-size: 15px;}
+ol>li:nth-child(4){font-size: 20px;}
+ol>li:nth-child(5){color: #7777ee}
+ul>li:nth-child(2){color: rgba(15, 75, 44, .2)}
+ul>li:nth-child(3){font: italic normal 700 15px "Roboto"}
