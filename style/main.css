@@ -177,3 +177,49 @@ select:focus
     /* display: none; - ячейки исчезают вообще */
     /* visibility: hidden; - лагает исчезание */
 }
+.btn-up{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 5px;
+    color: #fff;
+    background-color: #e775;
+    text-align: center;
+    font-family: monospace;
+    border-radius: 3px;
+    box-shadow: 0 0 5px 3px #0003;
+    text-decoration: none;
+}
+.unit{position: absolute;}
+.unit img{
+    border-radius: 3px;
+    box-shadow: 0 0 10px #0003;
+}
+.gallery{
+    display: flex;
+    align-items: start;
+}
+.gallery iframe{
+    min-width: 500px;
+    width: 500px;
+}
+.preview{
+    display: flex;
+    flex-wrap: wrap;
+}
+.preview a{
+    display: flex;
+    flex-direction: column;
+}
+.preview a span{display: none;}
+.preview a:hover .img-title{
+    position: relative;
+    top: -60px;
+    left: 30px;
+    width: 100px;
+    height: 0px;
+    display: block;
+}
