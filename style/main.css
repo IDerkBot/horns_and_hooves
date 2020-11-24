@@ -3,7 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{background-color: #e7e7e7;}
+body{
+    background-image: url(/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 h1{
     color: navy;
     font-size: 25px;
@@ -62,6 +66,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(45deg, #7777ee, #fff, #77eeee);
 }
 a{
     font-size: 14px;
@@ -106,7 +111,31 @@ a:hover{
     width: 100px;
 }
 .content-col{display: flex;}
-.menu, footer{background-color: rgb(21, 109, 241);}
+.menu{background-color: rgb(21, 109, 241);}
+footer{background: radial-gradient(ellipse, #77eeee, #7777ee);}
+.content{
+    background-color: #fff;
+    width: 100%;
+    padding: 5px;
+}
+.content.vis{
+    background-color: #fff5;
+}
+.vertical-menu{
+    background: url(/img/bg.jpg), linear-gradient(to top, #7ee, #7777ee);
+    background-blend-mode: soft-light;
+}
+.dropright{
+    display: none;
+    position: absolute;
+}
+.vertical-menu li:hover .dropright{
+    display: flex;
+    flex-direction: column;
+    transform: translate(90px, -30px);
+    background-color: #ced5ff;
+    padding: 5px;
+}
 footer{height: 100px;}
 /* Order */
 /* Форма */
