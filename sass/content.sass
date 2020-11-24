@@ -1,0 +1,146 @@
+.content-col
+    display: flex
+.content
+    background-color: #fff
+    width: 100%
+    padding: 5px
+    &.vis
+        background-color: #fff5
+.content img
+    width: 160px
+    box-sizing: border-box
+    object-fit: contain
+    background-color: red
+.about 
+    ul
+        margin-left: 25px
+        >li
+            &:nth-child(1)
+                font-variant: small-caps
+            ol
+                list-style: lower-roman
+                margin-left: 50px
+                >li
+                    font-variant: normal
+                    &:nth-child(1)
+                        font-weight: 100
+                    &:nth-child(2)
+                        font-weight: 300
+                    &:nth-child(3)
+                        font-size: 15px
+                    &:nth-child(4)
+                        font-size: 20px
+                    &:nth-child(5)
+                        color: #7777ee
+            &:nth-child(2)
+                color: rgba(15, 75, 44, .2)
+            &:nth-child(3)
+                font: italic normal 700 15px "Roboto"
+form
+    display: flex
+    flex-direction: column
+    margin-left: 10px
+    label
+        margin-bottom: 5px
+    input
+        margin-left: 5px
+    .labelOrder
+        display: flex
+        flex-direction: column
+    input[type=number]
+        width: 32px
+    .calculation
+        display: flex
+        width: 280px
+        justify-content: space-between
+    input[type=checkbox]
+        margin-right: 5px
+        margin-left: 0
+    input[type=submit]
+        margin-left: 0
+    input[type=password]:focus,
+    input[type=number]:focus,
+    input[type=email]:focus,
+    input[type=text]:focus,
+    select:focus
+        outline: 1px solid red
+        outline-offset: -1px
+@media screen and (max-width: 425px)
+    form
+        .calculation
+            max-width: 425px
+            width: 100%
+            flex-direction: column
+.education
+    border: 1px solid darkblue
+    border-spacing: 2px 1px
+    color: darkblue
+    td
+        border: 1px solid darkblue
+        word-break: break-word
+        font-size: 12px
+        margin-left: 1px
+        &:hover
+            opacity: 0
+    tr
+        &:nth-child(1)
+            td
+                &:nth-child(1)
+                    width: 25px
+                &:nth-child(2)
+                    width: 200px
+                &:nth-child(3)
+                    width: 100px
+        &:nth-child(2)
+            td
+                &:nth-child(1)
+                    width: 55px
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4)
+            font-weight: 700
+            text-align: center
+            vertical-align: top
+            background-color: red
+            color: #fff
+            font-style: italic
+        &:nth-last-child(1) td:nth-child(1)
+            text-align: right
+            font-weight: 700
+            color: black
+.unit
+    position: absolute
+    img
+        border-radius: 3px
+        box-shadow: 0 0 10px #0003
+.gallery
+    display: flex
+    align-items: start
+    iframe
+        min-width: 500px
+        width: 500px
+.preview
+    display: flex
+    flex-wrap: wrap
+    a
+        display: flex
+        flex-direction: column
+        span
+            display: none
+        &:hover .img-title
+            position: relative
+            top: -60px
+            left: 30px
+            width: 100px
+            height: 0px
+            display: block
+@media screen and (max-width: 768px)
+    .gallery
+        flex-direction: column
+        iframe
+            min-width: 100px
+            max-width: 500px
+            max-height: 500px
+            width: 100%
+            height: 300px

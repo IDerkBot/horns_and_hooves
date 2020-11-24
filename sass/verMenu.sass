@@ -1,0 +1,29 @@
+.vertical-menu
+    display: flex
+    flex-direction: column
+    min-width: 100px
+    width: 100px
+    background: url(/img/bg.jpg), linear-gradient(to top, #7ee, #7777ee)
+    background-blend-mode: soft-light
+    .dropright
+        display: none
+        position: absolute
+    li
+        list-style-type: circle
+        &:hover
+            list-style-type: square
+            margin-left: 10px
+    li:hover .dropright
+        display: flex
+        flex-direction: column
+        transform: translate(90px, -30px)
+        background-color: #ced5ff
+        padding: 5px
+    a.menu-link
+        color: #000
+        &:visited
+            color: #000
+        &:hover
+            text-decoration: none
+            transition: color .3s ease-out
+            color: red
